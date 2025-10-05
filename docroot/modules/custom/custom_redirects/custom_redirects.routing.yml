@@ -1,0 +1,31 @@
+entity.redirect_item.collection:
+  path: '/admin/config/system/redirects'
+  defaults:
+    _entity_list: 'redirect_item'
+    _title: 'Redirects'
+  requirements:
+    _permission: 'administer redirects'
+
+entity.redirect_item.add_form:
+  path: '/admin/config/system/redirects/add'
+  defaults:
+    _entity_form: 'redirect_item.add'
+    _title: 'Add Redirect'
+  requirements:
+    _permission: 'administer redirects'
+
+entity.redirect_item.edit_form:
+  path: '/admin/config/system/redirects/{redirect_item}/edit'
+  defaults:
+    _entity_form: 'redirect_item.edit'
+    _title: 'Edit Redirect'
+  requirements:
+    _permission: 'administer redirects'
+
+entity.redirect_item.delete_form:
+  path: '/admin/config/system/redirects/{redirect_item}/delete'
+  defaults:
+    _entity_form: 'redirect_item.delete'
+    _title: 'Delete Redirect'
+  requirements:
+    _permission: 'administer redirects'

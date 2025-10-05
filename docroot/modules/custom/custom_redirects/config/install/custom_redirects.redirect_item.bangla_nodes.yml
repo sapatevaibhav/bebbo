@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {}
+id: bangla_nodes
+label: 'Bangladeshi nodes redirect to homepage'
+source: '^node/.*$'
+target: '/'
+code: 301
+enabled: true
+host: 'bangla.bebbo.app.ddev.site'
+regex: true
+language: ''

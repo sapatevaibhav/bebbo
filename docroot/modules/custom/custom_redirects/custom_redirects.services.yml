@@ -1,0 +1,6 @@
+services:
+  custom_redirects.export_redirects_command:
+    class: Drupal\custom_redirects\Commands\ExportRedirects
+    arguments: ['@entity_type.manager', '@file_system']
+    tags:
+      - { name: drush.command }

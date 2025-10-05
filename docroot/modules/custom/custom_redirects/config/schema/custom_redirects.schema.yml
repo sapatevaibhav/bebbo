@@ -1,0 +1,33 @@
+custom_redirects.redirect_item.*:
+  type: config_entity
+  label: 'Redirect Item'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+    source:
+      type: string
+      label: 'Source path'
+    target:
+      type: string
+      label: 'Target URL'
+    code:
+      type: integer
+      label: 'Redirect code'
+    enabled:
+      type: boolean
+      label: 'Enabled'
+    host:
+      type: string
+      label: 'Host condition'
+    regex:
+      type: boolean
+      label: 'Use regex'
+    language:
+      type: string
+      label: 'Language condition'

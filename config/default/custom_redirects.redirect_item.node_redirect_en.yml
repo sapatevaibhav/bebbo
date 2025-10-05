@@ -1,0 +1,15 @@
+uuid: 35279a76-a135-4984-b6fe-272082460b66
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Gylw5FJnCsHGJAhk-VaJrFzR_vF1498_1rsvyAKykV8
+id: node_redirect_en
+label: 'Node redirect for English'
+source: '^node/.*$'
+target: /
+code: 301
+enabled: true
+host: ''
+regex: true
+language: en

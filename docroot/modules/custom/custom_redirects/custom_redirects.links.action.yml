@@ -1,0 +1,5 @@
+redirect_item.add:
+  route_name: 'entity.redirect_item.add_form'
+  title: 'Add redirect'
+  appears_on:
+    - entity.redirect_item.collection

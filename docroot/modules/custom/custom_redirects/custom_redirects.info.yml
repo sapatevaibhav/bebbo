@@ -1,0 +1,6 @@
+name: Custom Redirects
+type: module
+description: 'Manage site redirect list as a configuration entity and export to .htaccess.'
+core_version_requirement: ^10
+package: Custom
+dependencies: []

@@ -60,6 +60,45 @@ AddEncoding gzip svgz
 <IfModule mod_rewrite.c>
   RewriteEngine on
 
+# ---- BEGIN MIGRATED REDIRECTS (automatically generated) ----
+RewriteEngine On
+# Bangladeshi nodes redirect to homepage
+RewriteCond %{HTTP_HOST} ^bangla\.bebbo\.app\.ddev\.site$ [NC]
+RewriteRule ^node/.*$ / [R=301,L]
+
+# Ecuadorian nodes redirect to homepage
+RewriteCond %{HTTP_HOST} ^ec\.bebbo\.app\.ddev\.site$ [NC]
+RewriteRule ^node/.*$ / [R=301,L]
+
+# Pacific Islands nodes redirect to homepage
+RewriteCond %{HTTP_HOST} ^pc\.bebbo\.app\.ddev\.site$ [NC]
+RewriteRule ^node/.*$ / [R=301,L]
+
+# Turkish nodes redirect to homepage
+RewriteCond %{HTTP_HOST} ^tr\.bebbo\.app\.ddev\.site$ [NC]
+RewriteRule ^node/.*$ / [R=301,L]
+
+# Zimbabwean nodes redirect to homepage
+RewriteCond %{HTTP_HOST} ^zw\.bebbo\.app\.ddev\.site$ [NC]
+RewriteRule ^node/.*$ / [R=301,L]
+
+# Samoan nodes redirect to homepage
+RewriteCond %{HTTP_HOST} ^ws\.bebbo\.app\.ddev\.site$ [NC]
+RewriteRule ^node/.*$ / [R=301,L]
+
+# Example old path redirect
+RewriteCond %{HTTP_HOST} ^bebo\.app\.ddev\.site$ [NC]
+RewriteRule ^old-path/?$ /new-path [R=301,L]
+
+# Legacy section with path preservation
+RewriteCond %{HTTP_HOST} ^bebo\.app\.ddev\.site$ [NC]
+RewriteRule ^legacy/(.*)$ /new-section/$1 [R=301,L]
+
+# ---- END MIGRATED REDIRECTS ----
+
+
+
+
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
   # if you enable "www." stripping or enforcement, in order to ensure that
   # you don't bounce between http and https.

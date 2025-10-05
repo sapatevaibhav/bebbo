@@ -23,6 +23,7 @@ module:
   contextual: 0
   csv_serialization: 0
   custom_article: 0
+  custom_redirects: 0
   custom_serialization: 0
   date_popup: 0
   datetime: 0

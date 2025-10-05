@@ -1,0 +1,15 @@
+uuid: 72e8ea81-50b0-4922-afe0-caf5ac8bc626
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: s-sNdf7z5Q9tmUnfnfWvsdtdSKhkci3z4z3n0bepwCE
+id: node_redirect_ru
+label: 'Node redirect for Russian'
+source: '^node/.*$'
+target: 'https://www.unicef.org/eca/ru/bebbo-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B4%D0%BB%D1%8F-%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9'
+code: 301
+enabled: true
+host: ''
+regex: true
+language: ru

@@ -2,6 +2,7 @@ _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
 mode: simple
 ignored_config_entities:
+  - 'custom_redirects.redirect_item.*'
   - google_analytics.settings
   - mobile_app_links.android
   - mobile_app_links.ios
